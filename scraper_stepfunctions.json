@@ -1,0 +1,390 @@
+{
+  "StartAt": "lambda",
+  "States": {
+    "lambda": {
+      "Type": "Parallel",
+      "End": true,
+      "Branches": [
+        {
+          "StartAt": "2019_uni1_1",
+          "States": {
+            "2019_uni1_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni1",
+              "Parameters": {
+                "subredditer": ["UofT"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2019_uni1_11",
+              "TimeoutSeconds": 1500
+            },
+            "2019_uni1_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni1",
+              "Parameters": {
+                "subredditer": ["UofT"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+        {
+          "StartAt": "2019_uni2_1",
+          "States": {
+            "2019_uni2_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni2",
+              "Parameters": {
+                "subredditer": ["ryerson", "UTM"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2019_uni2_11",
+              "TimeoutSeconds": 1500
+            },
+            "2019_uni2_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni2",
+              "Parameters": {
+                "subredditer": ["ryerson", "UTM"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+        {
+          "StartAt": "2019_uni3_1",
+          "States": {
+            "2019_uni3_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni3",
+              "Parameters": {
+                "subredditer": ["uoguelph", "CarletonU"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2019_uni3_11",
+              "TimeoutSeconds": 1500
+            },
+            "2019_uni3_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni3",
+              "Parameters": {
+                "subredditer": ["uoguelph", "CarletonU"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+        {
+          "StartAt": "2019_uni4_1",
+          "States": {
+            "2019_uni4_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni4",
+              "Parameters": {
+                "subredditer": ["queensuniversity", "McMaster"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2019_uni4_11",
+              "TimeoutSeconds": 1500
+            },
+            "2019_uni4_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni4",
+              "Parameters": {
+                "subredditer": ["queensuniversity", "McMaster"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+        {
+          "StartAt": "2019_uni5_1",
+          "States": {
+            "2019_uni5_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni5",
+              "Parameters": {
+                "subredditer": ["uwaterloo"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2019_uni5_11",
+              "TimeoutSeconds": 1500
+            },
+            "2019_uni5_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni5",
+              "Parameters": {
+                "subredditer": ["uwaterloo"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+        {
+          "StartAt": "2019_uni6_1",
+          "States": {
+            "2019_uni6_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni6",
+              "Parameters": {
+                "subredditer": ["yorku", "TrentUniversity"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2019_uni6_11",
+              "TimeoutSeconds": 1500
+            },
+            "2019_uni6_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni6",
+              "Parameters": {
+                "subredditer": ["yorku", "TrentUniversity"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+        {
+          "StartAt": "2019_uni7_1",
+          "States": {
+            "2019_uni7_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni7",
+              "Parameters": {
+                "subredditer": ["brocku", "wlu"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2019_uni7_11",
+              "TimeoutSeconds": 1500
+            },
+            "2019_uni7_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2019_uni7",
+              "Parameters": {
+                "subredditer": ["brocku", "wlu"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+
+        {
+          "StartAt": "2020_uni1_1",
+          "States": {
+            "2020_uni1_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni1",
+              "Parameters": {
+                "subredditer": ["brocku", "UofT"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2020_uni1_11",
+              "TimeoutSeconds": 1500
+            },
+            "2020_uni1_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni1",
+              "Parameters": {
+                "subredditer": ["brocku", "UofT"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+        {
+          "StartAt": "2020_uni2_1",
+          "States": {
+            "2020_uni2_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni2",
+              "Parameters": {
+                "subredditer": ["ryerson", "UTM"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2020_uni2_11",
+              "TimeoutSeconds": 1500
+            },
+            "2020_uni2_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni2",
+              "Parameters": {
+                "subredditer": ["ryerson", "UTM"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+        {
+          "StartAt": "2020_uni3_1",
+          "States": {
+            "2020_uni3_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni3",
+              "Parameters": {
+                "subredditer": ["uoguelph", "CarletonU"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2020_uni3_11",
+              "TimeoutSeconds": 1500
+            },
+            "2020_uni3_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni3",
+              "Parameters": {
+                "subredditer": ["uoguelph", "CarletonU"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+        {
+          "StartAt": "2020_uni4_1",
+          "States": {
+            "2020_uni4_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni4",
+              "Parameters": {
+                "subredditer": ["queensuniversity", "McMaster"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2020_uni4_11",
+              "TimeoutSeconds": 1500
+            },
+            "2020_uni4_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni4",
+              "Parameters": {
+                "subredditer": ["queensuniversity", "McMaster"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+        {
+          "StartAt": "2020_uni5_1",
+          "States": {
+            "2020_uni5_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni5",
+              "Parameters": {
+                "subredditer": ["uwaterloo", "wlu"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2020_uni5_11",
+              "TimeoutSeconds": 1500
+            },
+            "2020_uni5_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni5",
+              "Parameters": {
+                "subredditer": ["uwaterloo", "wlu"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+        {
+          "StartAt": "2020_uni6_1",
+          "States": {
+            "2020_uni6_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni6",
+              "Parameters": {
+                "subredditer": ["yorku", "TrentUniversity"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2020_uni6_11",
+              "TimeoutSeconds": 1500
+            },
+            "2020_uni6_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni6",
+              "Parameters": {
+                "subredditer": ["yorku", "TrentUniversity"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        },
+        {
+          "StartAt": "2020_uni7_1",
+          "States": {
+            "2020_uni7_1": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni7",
+              "Parameters": {
+                "subredditer": ["brocku", "wlu"],
+                "monthstarter": 1,
+                "monthstopper": 2
+              },
+              "Next": "2020_uni7_11",
+              "TimeoutSeconds": 1500
+            },
+            "2020_uni7_11": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-2:265808464868:function:2020_uni7",
+              "Parameters": {
+                "subredditer": ["brocku", "wlu"],
+                "monthstarter": 11,
+                "monthstopper": 12
+              },
+              "End": true,
+              "TimeoutSeconds": 1500
+            }
+          }
+        }
+      ]
+    }
+  }
+}

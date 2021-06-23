@@ -1,0 +1,4 @@
+'''Config vars'''
+subreddits = [
+"yorku"
+]
