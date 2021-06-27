@@ -1,6 +1,8 @@
 <p align="center">
   <img width="15%" src="https://i.ibb.co/478DZ4f/greylogo.png">
-</p>
+</p> <br>
+
+# StudentEmotions
 ### Introduction 
 The COVID-19 pandemic and the resulting economic recession have negatively affected the mental well being of all kinds of individuals, a particular section of these being university students. Institutions of higher education worldwide are undergoing unprecedented change because of the COVID-19 pandemic. Universities and colleges have been forced to switch to online teaching and learning. In this project, I analyze the perceived difference of post and comment sentiments from various university communities on Reddit between the years; 2019 and 2020 as more and more of these educational changes were put into application. 
  
