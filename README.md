@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="15%" src="https://i.ibb.co/478DZ4f/greylogo.png">
+  <a href="https://sehaj.xyz/"><img width="15%" src="https://i.ibb.co/478DZ4f/greylogo.png"></a>
 </p> <br>
 
 # StudentEmotions
