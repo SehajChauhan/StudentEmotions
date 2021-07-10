@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://sehaj.xyz/"><img width="15%" src="https://i.ibb.co/478DZ4f/greylogo.png"></a>
+  <a href="https://sehaj.xyz/"><img width="15%" src="https://i.ibb.co/9YzMQvb/greylogo.png"></a>
 </p> <br>
 
 # StudentEmotions
@@ -29,7 +29,7 @@ The final layer will be a Dense layer with 2 units for the two classes present a
 The optimizer used is ‘adam’ as it is really efficient for working with large datasets.
 
 <p align="center">
-  <img width="45%" src="https://i.ibb.co/0D57359/model-plot.png">
+  <img width="45%" src="https://i.ibb.co/YR1Swzg/model-plot.png">
 </p>
 
 The model is then set to train for 3 epochs. The training process took about 13 minutes/epoch to be completed with the high compute performance of the sagemaker notebook instance.
